@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>VILLSPOR.NO - LINKS</title>
+  <title>VILLSPOR.NO - HOME</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -33,194 +33,684 @@
       <h1 class="logo me-auto me-lg-0"><a href="index.html">villspor<span>.no</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <!-- <li><a class="nav-link scrollto active" href="#hero">HOME</a></li> -->
+          <div id="links"></div>
+          <script>
+            const loadHtmlFile = (fileName, containerId) => {
+              fetch(fileName).then(function (response) {
+                return response.text();
+              }).then(function (html) {
+                containerId.innerHTML = html;
+              }).catch(function (err) {
+                console.warn('Something went wrong.', err);
+              });
+            }
+
+            loadHtmlFile("assets/links.html", links)
+          </script>
+          <li><a class="nav-link scrollto" href="main_news.html">NEWS</a></li>
+          <li><a class="nav-link scrollto" href="#about">ABOUT</a></li>
+          <li><a class="nav-link scrollto" href="#services">SERVICES</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">PORTFOLIO</a></li>
+          <li><a class="nav-link scrollto" href="#team">TEAM</a></li>
+          <li><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
     </div>
   </header>
 
-  <section id="hero" class="d-flex align-items-center justify-content-left">
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
 
-      <ul>
-        <li class="dropdown"><a href="#"><h2>NEWS</h2></a>
-          <ul>
-            <li><a href="https://dagbladet.no" target="_blank">Dagbladet</a></li>
-            <li><a href="https://nettavisen.no" target="_blank">Nettavisen</a></li>
-            <li><a href="https://vg.no" target="_blank">VG</a></li>
-            <li><a href="https://abcnyheter.no" target="_blank">ABC Nyheter</a></li>
-            <li><a href="https://dagsavisen.no" target="_blank">Dagsavisen</a></li>
-            <li><a href="https://nrk.no" target="_blank">NRK Nyheter</a></li>
-            <li><a href="https://www.tv2.no/nyheter" target="_blank">TV2 Nyheter</a></li>
-            <li><a href="https://www.moss-avis.no" target="_blank">Moss Avis</a></li>
-            <li><a href="https://www.ostlendingen.no" target="_blank">Østlendingen</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>IT</h2></a>
-          <ul>
-            <li><a href="https://tek.no" target="_blank">TEK.no</a></li>
-            <li><a href="https://nextpit.com" target="_blank">NEXT<b>PIT</b></a></li>
-            <li><a href="https://www.superhuman.ai/" target="_blank">Superhuman AI</a></li>
-            <li><a href="https://www.extremetech.com/tag/artificial-intelligence" target="_blank">ExtremeTech AI</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>FINANCE</h2></a>
-          <ul>
-            <li><a href="https://www.tradingview.com/symbols/OSL-BRG" target="_blank">TradingView</a></li>
-            <li><a href="https://investor.dn.no/#!/Oversikt" target="_blank">DN Investor</a></li>
-            <li><a href="https://marketwatch.com/watchlist" target="_blank">Market Watch</a></li>
-            <li><a href="https://www.coindesk.com/" target="_blank">Coindesk</a></li>
-            <li><a href="https://cryptonews.com/" target="_blank">Cryptonews</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>SPORT</h2></a>
-          <ul>
-            <li><a href="https://www.sofascore.com/tournament/football/norway/eliteserien/20" target="_blank">Tabell - Eliteserien</a></li>
-            <li><a href="https://www.sofascore.com/tournament/football/norway/1st-division/22" target="_blank">Tabell - OBOS Ligaen</a></li>
-            <li><a href="https://www.sofascore.com/tournament/football/norway/2nd-division-group-1/11085" target="_blank">Tabell - PostNord Ligaen</a></li>
-            <li><a href="https://www.sofascore.com/tournament/football/norway/3rd-division-group-2/11086" target="_blank">Tabell - 3. Divisjon</a></li>
-            <li><a href="https://www.sofascore.com/tournament/football/england/premier-league/17" target="_blank">Tabell - Premier League</a></li>
-            <li><a href="https://www.sofascore.com/tournament/handball/norway/eliteserien/221" target="_blank">Tabell - Eliteserien Håndball</a></li>
-            <li><a href="https://www.sofascore.com/tournament/ice-hockey/norway/fjordkraft-ligaen/260" target="_blank">Tabell - Eliteserien Hockey</a></li>
-            <li><a href="https://www.sofascore.com/tennis/rankings/atp" target="_blank">Tabell - ATP Ranking</a></li>
-            <li><a href="https://www.owgr.com/current-world-ranking" target="_blank">Tabell - Golf World Ranking</a></li>
-            <li><a href="https://dagbladet.no/fotballstudio" target="_blank">Dagbladet Livesenter</a></li>
-            <li><a href="https://www.sofascore.com/favorites" target="_blank">Sofascore</a></li>
-            <li><a href="https://www.pgatour.com/leaderboard.html" target="_blank">PGA Leaderboard</a></li>
-            <li><a href="https://www.motorsport.com/" target="_blank">Motorsport.com</a></li>
-            <li><a href="https://aftonbladet.se/sportbladet" target="_blank">Aftonbladet</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>MUSIC</h2></a>
-          <ul>
-            <li><a href="https://metalinjection.net/category/upcoming-releases/heavy-new-releases" target="_blank">Metal Injection - New Releases</a></li>
-            <li><a href="https://metalinjection.net/category/av/new-music" target="_blank">Metal Injection - New Music</a></li>
-            <li><a href="https://loudersound.com" target="_blank">Louder Sound</a></li>
-            <li><a href="https://www.blabbermouth.net" target="_blank">Blabbermouth</a></li>
-            <li><a href="https://www.blabbermouth.net/cdreviews" target="_blank">Blabbermouth Reviews</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>DAILY</h2></a>
-          <ul>
-            <li><a href="https://minside.rikstv.no" target="_blank">RiksTV</a></li>
-            <li><a href="https://minside.globalconnect.no/dashboard/455881" target="_blank">Global Connect</a></li>
-            <li><a href="https://www.ourgroceries.com/" target="_blank">Our Groceries</a></li>
-            <li><a href="https://www.yr.no/nb" target="_blank">Yr</a></li>
-            <li><a href="https://www.flashscore.com/favorites/live/" target="_blank">Flashscore</a></li>
-            <li><a href="https://music.youtube.com/" target="_blank">Youtube Music</a></li>
-            <li><a href="https://uscore.no/" target="_blank">Uscore - Kreditt | Bolig | Bil</a></li>
-            <li><a href="https://www.moss.kommune.no/aktuelt/" target="_blank">Moss Kommune - Aktuelt</a></li>
-            <li><a href="https://www.moss.kommune.no/meld-ifra/#/viewCases" target="_blank">Moss Kommune - Melde fra</a></li>
-            <li><a href="https://min.kommune.no/" target="_blank">Min Kommune</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>AI</h2></a>
-          <ul>
-            <li><a href="https://www.bing.com/" target="_blank">BING | COPILOT</a></li>
-            <li><a href="https://www.perplexity.ai/" target="_blank">PERPLEXITY</a></li>
-            <li><a href="https://gemini.google.com/app" target="_blank">GOOGLE GEMINI</a></li>
-            <li><a href="https://chatgpt.com/" target="_blank">CHATGPT</a></li>
-            <li><a href="https://groq.com/" target="_blank">GROQ</a></li>
-            <li><a href="https://poe.com/" target="_blank">POE - MULTIPLE BOTS</a></li>
-            <li><a href="https://aitoolreport.com/" target="_blank">AI TOOLS</a></li>
-            <li><a href="https://www.joinsuperhuman.io/tools/" target="_blank">SUPERHUMAN TOOL VAULT</a></li>
-            <li><a href="https://repeto.ai/" target="_blank">REPETO LEARNING ASSISTANT</a></li>
-            <li><a href="https://app.durable.co/" target="_blank">DURABLE WEBSITE BUILDER</a></li>
-            <li><a href="https://summarize.ing/" target="_blank">SUMMARIZE YOUTUBE VIDEOS</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>SV4</h2></a>
-          <ul>
-            <li><a href="https://altibox.no" target="_blank">Altibox - TV | Nettverk</a></li>
-            <li><a href="https://homely.no" target="_blank">Homely</a></li>
-            <li><a href="https://app.melcloud.com" target="_blank">Mitsubishi MelCloud</a></li>
-            <li><a href="https://boligmappa.no" target="_blank">Boligmappa</a></li>
-            <li><a href="https://app.astrom.no" target="_blank">Å Strøm</a></li>
-            <li><a href="https://huseierne.my.site.com" target="_blank">Huseierne | Min Side</a></li>
-            <li><a href="https://www.huseierne.no/vedlikeholdskalender" target="_blank">Huseierne | Vedlikeholdskalender</a></li>
-            <li><a href="https://jbf.no" target="_blank">Jernbanepersonalets bank og forsikring</a></li>
-            <li><a href="https://minesider.onecall.no/login" target="_blank">OneCall | Mine Sider</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>ADMIN | DEV</h2></a>
-          <ul>
-            <li><a href="https://domene.shop/login" target="_blank">Domeneshop Login</a></li>
-            <li><a href="https://webmail.domeneshop.no" target="_blank">Domeneshop Webmail</a></li>
-            <li><a href="https://stat.domeneshop.no/" target="_blank">Domeneshop Stats</a></li>
-            <li><a href="https://analytics.google.com/analytics" target="_blank">Google Analytics</a></li>
-            <li><a href="https://www.google.com/adsense" target="_blank">Google AdSense</a></li>
-            <li><a href="https://fontawesome.com/icons" target="_blank">Font Awesome</a></li>
-            <li><a href="http://www.favicon-generator.org" target="_blank">Favicons</a></li>
-            <li><a href="http://icoconvert.com" target="_blank">Icons</a></li>
-            <li><a href="https://app.bitly.com" target="_blank">Bit.ly</a></li>
-            <li><a href="http://localhost/apps/study" target="_blank">Study</a></li>
-            <li><a href="https://frilansinfo.no/nedlasting" target="_blank">Frilansinfo</a></li>
-            <li><a href="https://developers.facebook.com/docs/apps/register" target="_blank">FB App</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>PERSONLIG & ØKONOMI</h2></a>
-          <ul>
-            <li><a href="https://www.trumf.no" target="_blank">Trumf</a></li>
-            <li><a href="https://investor.vps.no/garm/auth/login" target="_blank">EuroNext VPS</a>
-            <li><a href="https://norskpensjon.no" target="_blank">Norsk Pensjon</a></li>
-            <li><a href="https://www.nordea.no/liv" target="_blank">Nordea Liv</a></li>
-            <li><a href="https://minhelse.helsenorge.no" target="_blank">Helse Norge | Min Helse</a></li>
-            <li><a href="https://www.norsk-tipping.no" target="_blank">Norsk Tipping</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>ENTERTAINMENT</h2></a>
-          <ul>
-            <li><a href="https://1337x.to" target="_blank">1337x | Torrents</a></li>
-            <li><a href="https://en.metal-tracker.com/torrents/search.html" target="_blank">Metal Tracker | Torrents</a></li>
-            <li><a href="https://www.dinside.no/data/her-er-de-skjulte-netflix-kodene/70113625" target="_blank">Netflix Kategorier | DinSide</a></li>
-            <li><a href="https://www.netflix.com/browse/my-list" target="_blank">Netflix | My List</a></li>
-            <li><a href="https://teliaplay.no" target="_blank">Telia Play</a></li>
-            <li><a href="https://pluto.tv" target="_blank">Pluto TV</a></li>
-            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-            <li><a href="https://no.7digital.com" target="_blank">7Digital</a></li>
-            <li><a href="http://www.gnoosic.com" target="_blank">Gnoosic | Discover New Music</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>SMART PAGES</h2></a>
-          <ul>
-            <li><a href="https://ifixit.com" target="_blank">I Fix It | Repairs</a></li>
-            <li><a href="https://cloudconvert.com" target="_blank">Cloud Convert | File Converter</a></li>
-            <li><a href="https://farligeprodukter.no" target="_blank">Farlige Produkter</a></li>
-            <li><a href="https://y2mate.yt/en" target="_blank">Y2Mate | YouTube to Sound Converter</a></li>
-            <li><a href="https://ontiva.com" target="_blank">Ontiva | YouTube to Sound Converter</a></li>
-            <li><a href="https://www.remove.bg" target="_blank">RemoveBG | Remove Background</a></li>
-            <li><a href="https://www.pexels.com" target="_blank">Pexels | Free Images</a></li>
-            <li><a href="https://www.scoreboardz.com" target="_blank">Scoreboardz</a></li>
-            <li><a href="https://www.dafont.com" target="_blank">DaFont</a></li>
-            <li><a href="https://www.photopea.com" target="_blank">Photopea | Online Image Editor</a></li>
-            <li><a href="https://www.printablepaper.net" target="_blank">Printable Paper</a></li>
-            <li><a href="https://www.printfriendly.com" target="_blank">PrintFriendly Web Pages</a></li>
-            <li><a href="https://www.manualslib.com" target="_blank">ManualsLib</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>SECURITY</h2></a>
-          <ul>
-            <li><a href="https://www.lastpass.com/password-generator" target="_blank">LastPass Password Generator</a></li>
-            <li><a href="https://haveibeenpwned.com" target="_blank">Have I been pwned?</a></li>
-            <li><a href="https://myaccount.google.com" target="_blank">Google Account Management</a></li>
-            <li><a href="https://takeout.google.com" target="_blank">Google Takeout</a></li>
-            <li><a href="https://myaccount.google.com/smartlink/security-checkup?utm_source=google-account&utm_medium=web&continue=https%3A%2F%2Fmyaccount.google.com%2Fsecurity" target="_blank">Google Account Security - 3rd Party Access</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/p/?LinkId=829203&mkt=en-US" target="_blank">Microsoft Account Security - 3rd Party Access</a></li>
-            <li><a href="https://www.facebook.com/settings?tab=applications&section=active" target="_blank">Facebook Account Security - 3rd Party Access</a></li>
-            <li><a href="https://twitter.com/settings/applications" target="_blank">Twitter Account Security - 3rd Party Access</a></li>
-            <li><a href="https://www.instagram.com/accounts/manage_access/" target="_blank">Instagram Account Security - 3rd Party Access</a></li>
-            <li><a href="https://www.linkedin.com/psettings/privacy" target="_blank">LinkedIn Privacy Settings</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><h2>THE MUSICIAN</h2></a>
-          <ul>
-            <li><a href="https://www.songsterr.com/" target="_blank">Songsterr Tabs</a></li>
-            <li><a href="https://www.ultimate-guitar.com/" target="_blank">Ultimate Guitar Tabs</a></li>
-            <li><a href="https://www.fender.com/online-guitar-tuner/" target="_blank">Fender Online Guitar Tuner</a></li>
-            <li><a href="https://www.loudnesspenalty.com/" target="_blank">Loudness Penalty Checker</a></li>
-          </ul>
-        </li>
-      </ul>
-      </li>
+<!--      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-7 col-lg-8">
+          <h1>Powerful digital solutions by villspor<span>.no</span></h1>
+          <h2>Where creativity meets results</h2>
+        </div>
+      </div>
+-->
+<!-- EDIT CONTENT BELOW
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-store-line"></i>
+            <h3><a href="">Audio Production</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line"></i>
+            <h3><a href="">Visual Design</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-calendar-todo-line"></i>
+            <h3><a href="">Web Development</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-paint-brush-line"></i>
+            <h3><a href="">Digital Marketing</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-database-2-line"></i>
+            <h3><a href="">Copywriting</a></h3>
+          </div>
+        </div>
+      </div>
+
+-->
+
+    </div>
+  </section>
+
+<!-- EDIT CONTENT BELOW
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="image col-lg-6" style='background-image: url("assets/img/features.jpg");' data-aos="fade-right"></div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-receipt"></i>
+              <h4>Est labore ad</h4>
+              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-cube-alt"></i>
+              <h4>Harum esse qui</h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-images"></i>
+              <h4>Aut occaecati</h4>
+              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-shield"></i>
+              <h4>Beatae veritatis</h4>
+              <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Check our Services</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Sed ut perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Dele cardo</a></h4>
+              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Divera don</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="cta-btn" href="#">Call To Action</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Check our Portfolio</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+          <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Voluptatem dignissimos provident quasi</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Check our Team</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d765.5693334517093!2d10.7228094!3d59.4007067!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646ad2ab2d1fcfb%3A0xc23ae4b3343f7571!2sSivveien%204%2C%201570%20Dilling!5e1!3m2!1sen!2sno!4v1707070713115!5m2!1sen!2sno" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Sivveien 4, 1570 Dilling, Norway</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>hello@villspor.no</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+47 934612xx</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
     </section>
 
   </main>
+
+-->
 
   <footer id="footer">
     <div class="footer-top">
@@ -229,7 +719,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>VILLSPOR<h2>.NO</h2></h3>
+              <h3>VILLSPOR<span>.NO</span></h3>
               <p>
                 STRINGZ MEDIAWORKS <br>
                 SIVVEIEN 4, 1570 DILLING, NORWAY <br><br>
@@ -283,7 +773,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><h2>VILLSPOR.NO | STRINGZ MEDIAWORKS</h2></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>VILLSPOR.NO | STRINGZ MEDIAWORKS</span></strong>. All Rights Reserved
       </div>
 
     </div>
