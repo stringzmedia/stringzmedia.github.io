@@ -1,0 +1,63 @@
+[Adblock Plus 3.7]
+! Version: 1.0
+! Title: SMW Custom Filter List
+! Last modified: 17.11.2019
+! Expires: 1 days (update frequency)
+! Homepage: villspor.no
+!
+##.gb_fa, .gb_g
+abcnyheter.no##.c-global-navigation-content
+abcnyheter.no##.c-global-navigation-content--right
+abcnyheter.no##.fc-dialog-container
+autosport.com###categorypromo
+autosport.com##.menu-button-rounded
+autosport.com###persistent
+bors.e24.no##.component.component-survey
+bors.e24.no##.text-container
+bors.e24.no##.chart-container.index-chart.neg
+bors.e24.no##.chart-container.index-chart.flat
+bors.e24.no##.chart-container.index-chart.pos
+crash.net###advert-banner-container
+dagbladet.no##a[style="border-color: #23ACCC;"]
+dagbladet.no##.preview.columns.large-4.small-12.medium-4.native-advertisement.compact
+digi.no##.newsletter-signup.frontpage
+dinside.no##.preview.columns.front-preview.large-12.small-12.no-image.bg-yellow.breaking--pulse-background
+e24.no##.O3Hor
+dn.no###googlead-toppbanner
+dn.no##.dnno-top-ad.dn-dfp-container.loading.non-blocking
+finance.yahoo.com###eyebrow
+flashscore.com##.otPlaceholder
+||ogs.google.com/u/0/widget/callout/$subdocument
+itavisen.no##cloudflare-app[style="z-index: 10002;"]
+itavisen.no##.homepage-video-area
+linkedin.com###ember163
+linkedin.com###ember1623
+linkedin.com##.feed-ad__top.ad-banner-container.is-header-zone.ember-view
+loudersound.com##.newsletter-form__wrapper.newsletter-form__wrapper--exitIntent
+messenger.com##.rq0escxv.l9j0dhe7.du4w35lb.j83agx80.g5gj957u.rj1gh0hx.buofh1pr.hpfvmrgz.i1fnvgqd.bp9cbjyn.owycx6da.btwxx1t3.dflh9lhu.scb9dxdr.sj5x9vvc.cxgpxx05.sn0e7ne5.f6rbj1fe.l3ldwz01
+messenger.com##.rq0escxv.l9j0dhe7.du4w35lb.j83agx80.g5gj957u.rj1gh0hx.buofh1pr.hpfvmrgz.i1fnvgqd.bp9cbjyn.owycx6da.btwxx1t3.gl4o1x5y.lt9micmv.qt6c0cv9.jb3vyjys.usczdcwk.iihba337.p8dawk7l
+moss-avis.no##.am-bazaar-ad.lp_toppbanner
+moss-avis.no##.am-bazaar-ad.lp_challengedeck
+nettavisen.no##.content
+neuraldsp.com##.PromoBanner__Banner-jyc47s-0.dZbWxQ
+ostlendingen.no##.am-bazaar-ad.lp_toppbanner
+ostlendingen.no##.am-bazaar-ad.lp_challengedeck
+ostlendingen.no###challengedeck-template
+ostlendingen.no##.cuscom
+sageaudio.com###footerCTA
+startsiden.no##.show-for-medium.advertisement__layoutAdsContainer___2ptPJ
+vg.no###ad-front-topboard
+vg.no##.ad.appnexus.topboard
+vgc.no/vgpluss/campaigns/580x400.png
+||ogs.google.com/widget/callout?prid=19016538&pgid=19008539&puid=bb04113bd8056cd3&origin=https%3A%2F%2Fplay.google.com&cn=callout&pid=269&spid=78&hl=en
+||ogs.google.com/u/0/widget/callout?prid=19016538&pgid=19008539&puid=bb04113bd8056cd3&cce=1&bc=1&origin=https%3A%2F%2Fplay.google.com&cn=callout&pid=269&spid=78&hl=en
+||quantcast.mgr.consensu.org/cmp.js$script
+||ogs.google.com/u/0/widget/callout/sid?prid=19018053&pgid=19008544&puid=56d43723bb3638ba&dc=1&bc=1&origin=https%3A%2F%2Fcalendar.google.com&cn=callout&pid=24&spid=24&hl=en
+web.snapchat.com##.wHvEy
+www.nettavisen.no##.amedia-latestnews
+www.nettavisen.no##div > .svelte-bm16o2
+www.ostlendingen.no##div > .svelte-1rkexh8
+www.moss-avis.no##div > .svelte-1rkexh8
+www.moss-avis.no##.amedia-latestnews
+tabs.ultimate-guitar.com##.SiteWidePermanentBlock.HyqOe.ppaLA > [href="https://www.ultimate-guitar.com/books"]
+tabs.ultimate-guitar.com##.SiteWidePermanentBlock.HyqOe.ppaLA
