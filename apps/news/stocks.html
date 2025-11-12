@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Prices</title>
+    <title>Live Stock Prices</title>
     <style>
         body {
             font-family: sans-serif;
@@ -12,10 +12,15 @@
             color: #333;
         }
 
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
         table {
             border-collapse: collapse;
             margin: 20px auto;
-            width: 60%;
+            width: 80%;
         }
 
         th,
@@ -29,11 +34,15 @@
             background: #0077cc;
             color: #fff;
         }
+
+        td.price {
+            text-align: right;
+        }
     </style>
 </head>
 
 <body>
-    <h1 style="text-align:center;">Live Stock Prices</h1>
+    <h1>Live Stock Prices</h1>
     <table id="stocks">
         <thead>
             <tr>
@@ -43,31 +52,46 @@
                 <th>Change</th>
             </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+            <tr>
+                <td colspan="4" style="text-align:center;">Loading...</td>
+            </tr>
+        </tbody>
     </table>
 
     <script>
         const tickers = ["AAPL", "GOOG", "MSFT", "TSLA"];
-        const url = `https://query1.finance.yahoo.com/v7/finance/quote?symbols=${tickers.join(",")}`;
+        const yahooUrl = `https://query1.finance.yahoo.com/v7/finance/quote?symbols=${tickers.join(",")}`;
+        const proxy = "https://corsproxy.io/?";
 
         async function loadData() {
-            const res = await fetch(url);
-            const data = await res.json();
-            const rows = data.quoteResponse.result.map(stock => `
-        <tr>
-          <td>${stock.symbol}</td>
-          <td>${stock.shortName}</td>
-          <td>${stock.regularMarketPrice}</td>
-          <td style="color:${stock.regularMarketChange >= 0 ? 'green' : 'red'};">
-            ${stock.regularMarketChange.toFixed(2)}
-          </td>
-        </tr>
-      `).join("");
-            document.querySelector("#stocks tbody").innerHTML = rows;
+            try {
+                const res = await fetch(proxy + yahooUrl);
+                if (!res.ok) throw new Error("Network response was not ok");
+                const data = await res.json();
+                if (!data.quoteResponse || !data.quoteResponse.result) throw new Error("Invalid data format");
+
+                const rows = data.quoteResponse.result.map(stock => `
+          <tr>
+            <td>${stock.symbol}</td>
+            <td>${stock.shortName}</td>
+            <td class="price">${stock.regularMarketPrice}</td>
+            <td class="price" style="color:${stock.regularMarketChange >= 0 ? 'green' : 'red'};">
+              ${stock.regularMarketChange.toFixed(2)}
+            </td>
+          </tr>
+        `).join("");
+
+                document.querySelector("#stocks tbody").innerHTML = rows;
+            } catch (err) {
+                console.error("Fetch error:", err);
+                document.querySelector("#stocks tbody").innerHTML =
+                    `<tr><td colspan="4" style="text-align:center; color:red;">Failed to load data (check console)</td></tr>`;
+            }
         }
 
         loadData();
-        setInterval(loadData, 60000); // refresh every minute
+        setInterval(loadData, 60000); // refresh every 60 seconds
     </script>
 </body>
 
